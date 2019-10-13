@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:rebeccapurple;
+        background-color: mediumpurple;
+      }
+      header {
+        background-color: pink;
+        /*Si añadimos aquí un !important veremos que aunque el selector sea menos específico que los inferiores dominará sobre los demás*/
+      }
+      article header {
+        background-color: blue;
+      }
+      .my-class{
+        background-color: olive;
+      }
+      header{
+        background-color: yellow;
+        /* Si comentamos este estilo veremos que el adquiere importancia es el header superior, así vemós que el último estilo prima sobre los anteriores */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Entendiendo las herencias CSS</h1>
+    </header>
+    <main>
+      <article>
+        <header>
+          <h2>Título párrafo uno</h2>
+        </header>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+      </article>
+    </main>
+    <aside>
+      <article>
+        <header class="my-class">
+          <h2>Título párrafo dos</h2>
+        </header>        
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+      </article>
+    </aside>
+  </body>
+</html>
