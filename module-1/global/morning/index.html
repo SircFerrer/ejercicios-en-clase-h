@@ -9,29 +9,36 @@
   </head>
   <body class="body">
     <header class="header">
-      <img src="./images/logo.svg" alt="Spotify" title="Bienvenida a Spotify" />
-      <nav>
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="./images/logo.png"
+          alt="Spotify"
+          title="Bienvenida a Spotify"
+        />
+      </div>
+      <nav class="header__menu">
         <ul>
-          <li>
-            <a href="#">Premium</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Premium</a>
           </li>
-          <li>
-            <a href="#">Ayuda</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Ayuda</a>
           </li>
-          <li>
-            <a href="#">Descargar</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Descargar</a>
           </li>
-          <li>
-            <a href="#">Regístrate</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Regístrate</a>
           </li>
-          <li>
-            <a href="#">Iniciar sesión</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Iniciar sesión</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <header>
+      <header class="main__header">
         <h1>Prueba Premium gratis 3 meses</h1>
         <h2>
           Escucha millones de canciones sin anuncios, a la carta y sin conexión.
@@ -43,9 +50,11 @@
         >
       </header>
 
-      <section>
-        <h3>¿Por qué pasarte a Premium?</h3>
-        <ul>
+      <section class="premium">
+        <header class="premium__header">
+          <h3>¿Por qué pasarte a Premium?</h3>
+        </header>
+        <ul class="premium__features">
           <li>
             <img src="./images/benefit-1.png" alt="" title="Descarga música" />
             <p>Descarga música</p>
@@ -79,21 +88,33 @@
     </main>
 
     <footer class="footer">
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Legal</a>
+      <nav class="footer__menu">
+        <ul class="footer__menu__list">
+          <li class="footer__menu__item">
+            <a href="#" class="footer__menu__link">Legal</a>
           </li>
-          <li>
-            <a href="#">Cookies</a>
+          <li class="footer__menu__item">
+            <a href="#" class="footer__menu__link">Cookies</a>
           </li>
-          <li>
-            <a href="#">Información sobre los anuncios</a>
+          <li class="footer__menu__item">
+            <a href="#" class="footer__menu__link"
+              >Información sobre los anuncios</a
+            >
           </li>
         </ul>
       </nav>
-      <p>España</p>
-      <p>© 2019 Spotify AB</p>
+      <div class="footer__copy">
+        <p class="footer__lang">
+          España
+          <img
+            class="footer__lang__img"
+            src="./images/es.svg"
+            alt=""
+            title="Lenguaje español"
+          />
+        </p>
+        <p>© 2019 Spotify AB</p>
+      </div>
     </footer>
   </body>
 </html>
