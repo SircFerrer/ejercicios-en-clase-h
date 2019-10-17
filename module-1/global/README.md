@@ -4,6 +4,20 @@ El objetivo de este ejercicio es aprender a estructurar y maquetar una página w
 
 ## Qué vamos a maquetar
 
+<table>
+  <tr>
+    <td>
+      <img src="./design/mobile.jpg" alt="Mobile version" height="200"/>
+    </td>
+    <td>
+      <img src="./design/tablet.jpg" alt="Tablet version" height="200"/>
+    </td>
+    <td>
+      <img src="./design/desktop.jpg" alt="Desktop version" height="200"/>
+    </td>
+  </tr>
+</table>
+
 Vamos a maquetar la página de [Spotify](https://www.spotify.com/es/premium/), pero vamos a añadir algunas moficicaciones para hacer nuestro ejercicio más interesante.
 
 Modificaciones y requerimientos:
