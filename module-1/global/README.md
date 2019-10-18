@@ -54,3 +54,5 @@ Una vez hayamos terminado de maquetar todos los contenedores, podremos borrar lo
 ## Do it yourself
 
 Os recomendamos a las alumnas que buquéis una página que os guste y la maquetéis siguiendo estos pasos. Si necesitáis ayuda pedírsela a las compañeras o a los profes.
+
+Prueba de Git
