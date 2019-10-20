@@ -147,7 +147,7 @@ ul {
 
   .premium__features {
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
   }
 
   .premium__features__list {
