@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #CC212A;
+  color: #cc212a;
 }
 
 p {
@@ -30,7 +30,8 @@ p {
   text-align: center;
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
   margin: 0;
 }
 
@@ -45,7 +46,7 @@ p {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid #CC212A;
+  border-top: 2px solid #cc212a;
 }
 
 .letter {
@@ -53,18 +54,18 @@ p {
   position: relative;
   top: -1.8125rem;
   width: 100%;
-  text-align: center
+  text-align: center;
 }
 
 .letter__inner {
   display: inline-block;
   margin-bottom: -0.5rem;
   padding: 1.11rem 1.25rem;
-  background-color: #CC212A;
+  background-color: #cc212a;
   border-radius: 50%;
   font-weight: bold;
   font-size: 0.875rem;
-  color: #FFF;
+  color: #fff;
 }
 
 .copy {
@@ -77,13 +78,13 @@ p {
 }
 
 @media all and (min-width: 768px) {
-
   .footer__inner {
     flex-direction: row-reverse;
     align-items: center;
   }
 
-  .letter, .copy {
+  .letter,
+  .copy {
     flex-grow: 1;
     width: 50%;
   }
@@ -93,8 +94,8 @@ p {
     text-align: right;
   }
 
-  .letter__inner, .copy__inner {
+  .letter__inner,
+  .copy__inner {
     margin: 1rem;
   }
-
 }

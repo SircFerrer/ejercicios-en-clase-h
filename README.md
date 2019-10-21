@@ -27,4 +27,3 @@ En este repo los profes vamos a ir subiendo los ejercicios, ejemplos, repasos y 
     | └ morning/
     └ extras
 ```
-toco este README antes de hacer PULL
