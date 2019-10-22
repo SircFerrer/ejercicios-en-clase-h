@@ -27,3 +27,5 @@ En este repo los profes vamos a ir subiendo los ejercicios, ejemplos, repasos y 
     | └ morning/
     └ extras
 ```
+
+Prueba de git diff
