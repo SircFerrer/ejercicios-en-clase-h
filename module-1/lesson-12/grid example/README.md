@@ -1,3 +1,3 @@
-# Ejercicio de Grid
+# Ejemplo de Grid
 
-Ejemplo realizado por [Carlos Mañas](https://github.com/oneeyedman).
+Ejemplo realizado por el profesor de Adalab [Carlos Mañas](https://github.com/oneeyedman).
