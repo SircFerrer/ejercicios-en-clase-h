@@ -2,20 +2,16 @@
 
 @font-face {
   font-family: Circular;
-  src: url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2')
-      format('woff2'),
-    url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff')
-      format('woff');
+  src: url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2') format('woff2'),
+    url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Circular;
-  src: url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2')
-      format('woff2'),
-    url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff')
-      format('woff');
+  src: url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2') format('woff2'),
+    url('https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
@@ -59,6 +55,18 @@ ul {
 
 .header__logo {
   margin: 0.3125rem 0 0 1.25rem;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: perspective(100px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(100px) rotateY(360deg);
+  }
 }
 
 .header__logo__img {
@@ -120,6 +128,16 @@ ul {
   align-items: flex-start;
   padding: 30px;
   list-style: none;
+  border-radius: 30px;
+  border: transparent solid 5px;
+  transition: background-color 2s linear;
+}
+
+.premium__features__list:hover {
+  /* background se aplica suavecito */
+  background: #509bf5;
+  /* border se aplica bruscamente */
+  border: #4285f4 solid 5px;
 }
 
 .premium__features__text {
