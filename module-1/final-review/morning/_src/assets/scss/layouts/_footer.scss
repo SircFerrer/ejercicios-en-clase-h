@@ -1,0 +1,7 @@
+.footer {
+  border: solid 3px green;
+
+  @media all and (min-width: 768px) {
+    grid-column: span 2;
+  }
+}

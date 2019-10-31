@@ -1,0 +1,30 @@
+.left-col {
+  border: solid 10px black;
+}
+
+.right-col {
+  border: solid 10px violet;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+
+    border-left: 30px solid #666;
+  }
+}
+
+.right-col {
+  display: flex;
+
+  &__author {
+    width: 60%;
+  }
+
+  &__sections {
+    width: 40%;
+  }
+}
