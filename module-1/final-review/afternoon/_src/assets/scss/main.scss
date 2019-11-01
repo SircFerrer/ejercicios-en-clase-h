@@ -1,0 +1,12 @@
+/*Primero importo las variables para poder usarlas en el resto de partials*/
+// En el caso de tener mixins y funciones, después irían estos dos
+@import 'core/variables.scss';
+
+// Importo mis CSS externas en vendors
+@import 'vendors/normalize.scss';
+
+// Importo mi estructura de plantilla
+//Si tuviera un header y un footer irían también
+@import 'template/base.scss';
+
+//Luego importaría mis páginas
