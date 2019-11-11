@@ -1,36 +1,35 @@
 'use strict';
 
-// get numberA dom element
-const numberA = document.querySelector('.js-number-a');
-// get numberB dom element
-const numberB = document.querySelector('.js-number-b');
-// get result dom element
-const result = document.querySelector('.js-result');
+// get numberAElement dom element
+const numberAElement = document.querySelector('.js-number-a');
+// get numberBElement dom element
+const numberBElement = document.querySelector('.js-number-b');
+// get resultElement dom element
+const resultElement = document.querySelector('.js-result');
 
 const sum = function() {
-  // get numberA value
-  let numberAValue = numberA.value;
+  // get numberAElement value
+  let numberAValue = numberAElement.value;
   // parse string value to number value
   numberAValue = parseInt(numberAValue);
 
-  // get numberB value
-  let numberBValue;
-  numberBValue = numberB.value;
+  // get numberBElement value
+  let numberBValue = numberBElement.value;
   // parse string value to number value
   numberBValue = parseInt(numberBValue);
 
   // add values
   const resultValue = numberAValue + numberBValue;
-  // check result
+  // check resultElement
   if (isNaN(resultValue)) {
-    result.value = 'Datos inválidos';
+    resultElement.value = 'Datos inválidos';
   } else {
-    // set result value in result input element
-    result.value = resultValue;
+    // set resultElement value in resultElement input element
+    resultElement.value = resultValue;
   }
 };
 
-// listen changes in numberA input
-numberA.addEventListener('change', sum);
-// listen changes in numberA input
-numberB.addEventListener('change', sum);
+// listen changes in numberAElement input
+numberAElement.addEventListener('change', sum);
+// listen changes in numberAElement input
+numberBElement.addEventListener('change', sum);
