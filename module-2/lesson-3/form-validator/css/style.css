@@ -1,0 +1,41 @@
+.error{
+  border: 1px solid red;
+}
+
+body {
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+form{
+  -webkit-box-shadow: 1px 1px 3px 2px #D1D1D1;
+  box-shadow: 1px 1px 3px 2px #D1D1D1;
+  max-width: 300px;
+  padding: 40px;
+  background-color:white;
+}
+
+label {
+  min-width: 50px;
+  display: inline-block
+}
+
+button{
+  background-color: darkcyan;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 5px;
+  min-width: 80px;
+  position: relative;
+  left: 64%;
+}
+
+.wrapper-user,.wrapper-email{
+  padding: 10px;
+}
