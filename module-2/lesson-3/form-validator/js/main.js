@@ -25,7 +25,7 @@ function sendInfo () {
   }
 
   //¿mi booleano es distinto de true? es decir, es false mi formulario no tiene errores? pues borror las clases error, envío los datos.
-  if(hasErrors != true) {
+  if(hasErrors !== true) {
     elementWrapperEmail.classList.remove('error');
     elementWrapperUser.classList.remove('error');
     alert('Datos enviados');
