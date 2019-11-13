@@ -30,9 +30,6 @@ function sendInfo () {
     elementWrapperUser.classList.remove('error');
     alert('Datos enviados');
   }
-  
-  //reseteo el valor inicial de mi booleano
-  hasErrors = false;
 }
 
 elementButton.addEventListener('click',sendInfo);
