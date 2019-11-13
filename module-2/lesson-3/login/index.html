@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <style>
+    p {
+      color: red;
+    }
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <form>
+      <div class="wrapper-user" id="wrapper-user">
+        <label for="id="user-name>Nombre</label>
+        <input type="text" name="user" id="user-name">
+      </div>
+      <div class="wrapper-password" id="wrapper-email">
+        <label for="email">Contraseña</label>
+        <input type="text" name="password" id="user-password">
+      </div>
+      <p class="error-wrapper hidden">Alguno de los campos no es correcto</p>
+      <button id="login-button" type="button">Entrar</button>
+  </form>
+  <script src="./js/main.js"></script>
+</body>
+</html>
