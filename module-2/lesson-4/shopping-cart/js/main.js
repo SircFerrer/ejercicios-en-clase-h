@@ -6,7 +6,7 @@ const elementWrapperCart = document.querySelector('#my-cart');
 
 //función que añade producto a la cesta, toma el nombre del producto y se lo paso como argumento a la función displayProducts
 function addToCart(event) {
-  //en esta línea me quedo con el texto de la etiqueta
+  //en esta línea me quedo con el valor de la etiqueta hermana superior o previousElementSibling
   const product = event.target.previousElementSibling.innerHTML;
   //ahora que tengo el nombre del producto se lo paso como argumento a mi función displayProducts
   displayProducts(product);
