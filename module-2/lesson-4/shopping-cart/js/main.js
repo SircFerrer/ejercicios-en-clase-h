@@ -14,7 +14,7 @@ function addToCart(event) {
 
 //función que me dice el nombre del producto que he añadido a la cesta, se lo paso como parámetro, puedo poner myProduct o cualquier nombre que se me ocurra con sentido
 function displayProducts(myProduct) {
-  alert(`has añadido ${myProduct} a las cesta`);
+  alert(`Has añadido ${myProduct} a las cesta`);
   //ahora llamo a la función que incrementa los productos de mi cesta
   increaseProductQuantity();
 }
@@ -26,7 +26,7 @@ function increaseProductQuantity(){
   elementWrapperCart.innerHTML = productQuantity;
 }
 
-//NO PREOCUPARSE SI NO ENTIENDO ESTO YA LO VEREMOS, estoy asignando el eventLIstener a cada uno de los botones de añadir al carrito para que pueda hacer click en todos
+//NO PREOCUPARSE SI NO ENTIENDO ESTO YA LO VEREMOS, estoy asignando el eventListener a cada uno de los botones de añadir al carrito para que pueda hacer click en todos
 elementsButtons.forEach(function(elementButton) {
   elementButton.addEventListener('click', addToCart);
 });
