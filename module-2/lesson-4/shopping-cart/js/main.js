@@ -6,6 +6,7 @@ const elementWrapperCart = document.querySelector('#my-cart');
 
 //función que añade producto a la cesta, toma el nombre del producto y se lo paso como argumento a la función displayProducts
 function addToCart(event) {
+  //en esta línea me quedo con el texto de la etiqueta
   const product = event.target.previousElementSibling.innerHTML;
   //ahora que tengo el nombre del producto se lo paso como argumento a mi función displayProducts
   displayProducts(product);
@@ -26,7 +27,7 @@ function increaseProductQuantity(){
 }
 
 //NO PREOCUPARSE SI NO ENTIENDO ESTO YA LO VEREMOS, estoy asignando el eventLIstener a cada uno de los botones de añadir al carrito para que pueda hacer click en todos
-elementsButtons.forEach((elementButton) => {
+elementsButtons.forEach(function(elementButton) {
   elementButton.addEventListener('click', addToCart);
 });
 
