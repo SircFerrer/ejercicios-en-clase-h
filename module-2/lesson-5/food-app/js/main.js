@@ -1,7 +1,7 @@
 'use strict';
 
 //comida me viene de una BBDD
-let foodList = ["Spaguettis", "Samosas ricas", "Pizza con mucho queso"];
+const foodList = ["Spaguettis", "Samosas ricas", "Pizza con mucho queso"];
 
 //accedo a los elementos
 const elementCloseButton = document.querySelector('#close-pop-up');
