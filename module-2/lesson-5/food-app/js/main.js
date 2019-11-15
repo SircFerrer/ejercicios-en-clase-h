@@ -7,7 +7,6 @@ const foodList = ["Spaguettis", "Samosas ricas", "Pizza con mucho queso"];
 const elementCloseButton = document.querySelector('#close-pop-up');
 const elementPopUpWrapper = document.querySelector('#overlay');
 const elementListUl = document.querySelector('#food-list');
-const elementDinamicButton = document.querySelector('.add-to-cart');
 
 /////////////lista dinámica////////////
 ///IGNORAR DE MOMENTO ESTO PERO ENTENDER EL CONTEXTO
