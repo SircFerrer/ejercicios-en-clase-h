@@ -22,7 +22,7 @@ const handleLinkClick = ev => {
   console.log('handleLinkClick: el elemento escuchado es', ev.currentTarget);
 
   ev.preventDefault(); // des/comentar esta linea a ver qué pasa
-  // ev.stopPropagation(); // des/comentar esta linea a ver qué pasa
+  //ev.stopPropagation(); // des/comentar esta linea a ver qué pasa
 };
 
 linkAdalab.addEventListener('click', handleLinkClick);

@@ -8,7 +8,7 @@ if (2 === 2) {
   const globalVar = "Ey, I'm not really global";
   const notGlobalVar = "Shirt, I'm not global: (";
 
-  // console.log(globalVar); // devuelve 'Ey, I'm not really global'
+  console.log(globalVar); // devuelve 'Ey, I'm not really global'
   // console.log(notGlobalVar); // devuelve 'Shirt, I'm not global :('
 }
 
