@@ -4,7 +4,7 @@ const age = document.querySelector('.js-age');
 const resultIf = document.querySelector('.js-result-if');
 const resultTernaryOperator = document.querySelector('.js-result-ternary-operator');
 
-const showMessage = function () {
+const showMessage = function() {
   const ageValue = parseInt(age.value);
 
   // este if es equivalente al operador ternario que hay a continuación
