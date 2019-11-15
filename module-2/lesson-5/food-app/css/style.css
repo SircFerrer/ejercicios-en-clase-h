@@ -3,8 +3,49 @@
   padding: 0;
 }
 
+h1,p{
+  margin-bottom: 20px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .hidden{
   display: none !important;
+}
+
+button{
+  background: cornflowerblue;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+
+button:hover{
+  background: darkcyan;
+}
+
+main{
+  max-width: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li:nth-child(odd){
+  background: #cacaca;
 }
 
 .overlay{
@@ -21,7 +62,7 @@
 
 .popup-wrapper{
   background: white;
-  min-width: 300px;
+  max-width: 400px;
   padding: 20px;
   border-radius: 10px;
 }
