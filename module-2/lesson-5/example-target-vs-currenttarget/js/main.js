@@ -1,6 +1,10 @@
 /* eslint-disable no-console */
 'use strict';
 
+const container = document.querySelector('.js-container');
+const linkAdalab = document.querySelector('.js-link-adalab');
+const linkGoogle = document.querySelector('.js-link-google');
+
 // container
 
 const handleContainerClick = ev => {
@@ -9,7 +13,6 @@ const handleContainerClick = ev => {
   ev.preventDefault();
 };
 
-const container = document.querySelector('.js-container');
 container.addEventListener('click', handleContainerClick);
 
 // links
@@ -22,8 +25,6 @@ const handleLinkClick = ev => {
   // ev.stopPropagation(); // des/comentar esta linea a ver qué pasa
 };
 
-const linkAdalab = document.querySelector('.js-link-adalab');
 linkAdalab.addEventListener('click', handleLinkClick);
 
-const linkGoogle = document.querySelector('.js-link-google');
 linkGoogle.addEventListener('click', handleLinkClick);
