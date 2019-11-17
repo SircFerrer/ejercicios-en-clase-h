@@ -1,31 +1,17 @@
 'use strict';
 
-const setCarProperty = (obj, property, value) => {
-  obj[property] = value;
-}
+const inputPassword = document.querySelector('.js-input-password');
+const inputEmail = document.querySelector('.js-input-email');
+const formData = {};
 
-debugger;
+const setFormData = ev => {
+  // esta función es genérica, la función no sabe si está guardando en formData el valor del email o de la contraseña
+  const input = ev.target;
+  const inputName = input.name;
+  const inputValue = input.value;
+  formData[inputName] = inputValue;
+  console.log('Datos del formulario:', formData);
+};
 
-const car = {}
-
-console.log('Car properties:', car);
-
-// esto es lo mismo que car.color = 'red';
-setCarProperty(car, 'color', 'red');
-console.log('Car properties:', car);
-
-// esto es lo mismo que car.doors = 5;
-setCarProperty(car, 'doors', 5);
-console.log('Car properties:', car);
-
-// esto es lo mismo que car.airbag = true;
-setCarProperty(car, 'airbag', true);
-console.log('Car properties:', car);
-
-// esto es lo mismo que car.gasoil = '60%';
-setCarProperty(car, 'gasoil', '60%');
-console.log('Car properties:', car);
-
-// esto es lo mismo que car.color = 'blue';
-setCarProperty(car, 'color', 'blue');
-console.log('Car properties:', car);
+inputPassword.addEventListener('keyup', setFormData);
+inputEmail.addEventListener('keyup', setFormData);
