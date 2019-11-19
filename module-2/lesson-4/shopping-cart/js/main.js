@@ -22,8 +22,6 @@ function addToCart(event){
   displayProducts(product);
 }
 
-
-
-elementsButtons.forEach(function(elementButton){
+for (const elementButton of elementsButtons) {
   elementButton.addEventListener('click',addToCart)
-})
+}
