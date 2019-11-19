@@ -6,7 +6,7 @@ const formData = {};
 
 const setFormData = ev => {
   // esta función es genérica, la función no sabe si está guardando en formData el valor del email o de la contraseña
-  const input = ev.target;
+  const input = ev.target; //asi no tengo que escribir todo el rato ev.target
   const inputName = input.name;
   const inputValue = input.value;
   formData[inputName] = inputValue;
