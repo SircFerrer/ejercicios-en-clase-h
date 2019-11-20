@@ -62,7 +62,12 @@ const displayProductList = () => {
   }
 }
 
-function displayPopUp(myProduct) {
+// function displayPopUp(myProduct) {
+//   alert(`Has añadido ${myProduct} a tu cesta`);
+//   increaseProductQuantity();
+// }
+
+const displayPopUp = myProduct => {
   alert(`Has añadido ${myProduct} a tu cesta`);
   increaseProductQuantity();
 }
