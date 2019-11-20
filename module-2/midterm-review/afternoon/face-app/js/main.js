@@ -13,7 +13,7 @@ const elementMain = document.querySelector('#main');
 //2---obtener número aleatorio, cambiar el color del fondo
 
 //FUNCIÓN obtengo número aleatorio entre 0 y 100
-const getRandomNumber = (max) => Math.round(Math.random() * max);
+const getRandomNumber = max => Math.round(Math.random() * max);
 
 //FUNCIÓN cambio el color de fondo pasándole mi número aleatorio como parámetro
 //para poder hacer el condicional
