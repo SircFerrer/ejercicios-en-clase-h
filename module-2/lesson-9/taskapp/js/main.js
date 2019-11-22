@@ -12,15 +12,15 @@ const elementInput = document.querySelector('#new-task-input');
 const elementUlList = document.querySelector('#list-container');
 //////
 
-//PASO 3----> Mi manejador ejecuta 1 función SendNewTask, que se encarga de enviar la tarea que hemos añadido
+//PASO 3----> Mi manejador ejecuta 1 función createNewTask, que se encarga de enviar la tarea que hemos añadido
 function addNewTaskHandler(){
-  sendNewTask();
+  createNewTask();
   console.log(taskList);
 }
 //////
 
-//PASO 4 A---> Sendnewtask valida mi input, ya que siempre que enviamos datos por un input debemos contemplar que estos vengan correctamente o mi input no venga vacío
-const sendNewTask = () => {
+//PASO 4 A---> createNewTask valida mi input, ya que siempre que enviamos datos por un input debemos contemplar que estos vengan correctamente o mi input no venga vacío
+const createNewTask = () => {
   //si mi input no viene vacío, es decir, su longitud es distinta de 0, entonces añado su input.value al array vacío con push y ejecuto la función addLiElement para pintar mi elemento en el HTML, en caso contrario, es decir si me llega vacío lanzo un alert con un aviso
   if(elementInput.value.length !== 0){
     taskList.push(elementInput.value);
