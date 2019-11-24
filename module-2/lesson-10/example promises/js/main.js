@@ -14,7 +14,7 @@ fetch('./server-data/perretes.json')
   .then((info, foo) => {
     // como el then anterior solo puede devolver un dato en el return
     // este then solo puede recibir un dato por parámetros
-    // por eso foo es undefined
+    // por eso foo, que es el segundo parámetro, es undefined
     console.log('Pinto los datos que recibo:', info, foo);
     return 3;
   })
