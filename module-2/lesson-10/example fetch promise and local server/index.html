@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="http://beta.adalab.es/resources/stylesheets/all.css" />
+    <title>Ejercicio</title>
+  </head>
+
+  <body class="page">
+
+    <div class="js-loading hidden">
+      <div class="loading loading--fixed"></div>
+    </div>
+
+    <header>
+      <h1 class="title--big">Mi perrete</h1>
+    </header>
+
+    <main class="col2">
+      <section>
+        <p>Nombre: <span class="js-name"></span></p>
+        <p>Raza: <span class="js-breed"></span></p>
+        <p>Edad: <span class="js-age"></span></p>
+        <p>Tiene chip: <span class="js-has-chip"></span></p>
+        <button class="js-btn form__btn">Obtener datos del servidor</button>
+      </section>
+
+      <section>
+        <p>Para ver la hora de los logs en la consola:</p>
+        <ol>
+          <li>Abre devtools.</li>
+          <li>Abre las settings (en los 3 puntitos verticales).</li>
+          <li>Activa Console > Show timestamps.</li>
+        </ol>
+        <p>Para hacer una llamada al servidor despacito:</p>
+        <ol>
+          <li>Abre devtools.</li>
+          <li>Pulsa en network.</li>
+          <li>Pulsa en Online > selecciona Slow 3G.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+
+</html>
