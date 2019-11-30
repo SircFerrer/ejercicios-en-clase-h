@@ -1,0 +1,13 @@
+li {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.selected {
+  background-color:#eaeaea;
+}
+
+.hidden{
+  display:none
+}
