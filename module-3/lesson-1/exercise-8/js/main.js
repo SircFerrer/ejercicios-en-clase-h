@@ -9,14 +9,17 @@ const runners = [
 ];
 
 const isWinner = (acc, user) => {
-  if (acc === null || user.time < acc.time) {
+  if (user.time < acc.time) {
     return user;
   } else {
     return acc;
   }
 };
 
-const winner = runners.reduce(isWinner, null);
+// esto es lo mismo de arriba pero en una sola línea
+// const isWinner = (acc, user) => user.time < acc.time;
+
+const winner = runners.reduce(isWinner);
 
 // eslint-disable-next-line no-console
 console.log('The winner is...', winner);
