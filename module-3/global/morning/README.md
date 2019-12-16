@@ -2,6 +2,8 @@
 
 ![Diseño](./info/design.png)
 
+> Nota: los vídeos de este ejercicio están en la carpeta **info**.
+
 ## Qué vamos a hacer
 
 - [x] Crear la aplicación
