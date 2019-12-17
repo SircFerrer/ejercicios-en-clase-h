@@ -1,0 +1,13 @@
+.app {
+  text-align: center;
+}
+
+img {
+  max-width: 100px;
+}
+
+header{
+  background-color: #eaeaea;
+  min-width: 100vh;
+  min-height: 100px;
+}
