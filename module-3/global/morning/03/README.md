@@ -13,4 +13,4 @@
 - [x] Crear 10 tarjetas
 - [x] Escuchar un evento dentro de un componente dummy
 - [x] Escuchar un evento dentro de un componente de clase
-- [ ] Hacer lifting entre varios componentes
+- [x] Hacer lifting entre varios componentes
