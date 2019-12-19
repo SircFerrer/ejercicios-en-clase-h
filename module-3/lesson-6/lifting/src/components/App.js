@@ -12,12 +12,12 @@ class App extends React.Component {
     super(props);
     this.consoleValue = this.consoleValue.bind(this);
   }
-  
+
   //aquí defino la función que pinta como método de mi componente App
   //recibe algo y pinta ese algo, este algo valdrá lo que sea que le llegué como input.value
   //desde mi hijo
-  consoleValue (loqueseaquereciba){
-    console.log(loqueseaquereciba)
+  consoleValue (valordelinput){
+    console.log(valordelinput)
   }
 
   render() {
