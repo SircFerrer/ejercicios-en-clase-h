@@ -1,29 +1,28 @@
 import React from 'react';
 import '../stylesheets/App.css';
 import Header from './Header';
-import Show from './Show';
-import ShowClass from './ShowClass';
+import ShowList from './ShowList';
+import api from '../data/apiData.js';
 
-const api = [
-  {
-    title: 'Aladdin',
-    img: 'images/aladdin.jpg'
-  },
-  {
-    title: 'El Rey León',
-    img: 'images/rey-leon.jpg'
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.consoleLogenApp = this.consoleLogenApp.bind(this);
   }
-]
 
+  consoleLogenApp(inputValue){
+    console.log(inputValue)
+  }
 
-function App() {
-  return (
-    <div className="app">
-      <Header/>
-      <Show title={api[1].title} img={api[1].img}/>
-      <ShowClass title="Aladdin" img={api[0].img}/>
-    </div>
-  );
+  render() {
+    return (
+      <div className="app">
+        <Header propsdeheader={this.consoleLogenApp}/>
+        <ShowList items={api}/>
+      </div>
+    );
+  }
 }
 
 export default App;

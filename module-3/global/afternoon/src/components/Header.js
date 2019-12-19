@@ -1,9 +1,16 @@
 import React from 'react';
+import Form from './Form';
+// import FormClass from './FormClass';
 
-const Header = () => {
+
+const Header = (props) => {
+  console.log(props)
   return (
     <header>
-MI header
+      <Form
+        propsdeForm = {props.propsdeheader}
+      />
+      {/* <FormClass/> */}
     </header>
   );
 }
