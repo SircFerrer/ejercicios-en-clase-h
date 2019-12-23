@@ -1,20 +1,45 @@
 import React from 'react';
 
-const Form = props => {
-
-  const searchHandler = (event) => {
-    props.propsdeForm(event.target.value);
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSearch = this.handleSearch.bind(this);
+    this.submitSearch = this.submitSearch.bind(this);
   }
 
-  return (
-    <form>
-      <label htmlFor="search">
-        Busca series en componente dummy
-      </label>
-      <input type="text" id="search" name="search" onKeyUp={searchHandler}/>
-      <button type="submit">Enviar</button>
-    </form>
-  );
+  handleSearch(event) {
+    this.props.handleSearch(event.target.value);
+  }
+
+  submitSearch(event) {
+    event.preventDefault();
+    debugger;
+    this.props.search();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.submitSearch}>
+        <label
+          htmlFor="search"
+          className="form__label"
+        >
+          Busca una serie:
+        </label>
+        <input
+          type="text"
+          id="search"
+          name="search"
+          className="form__input-text"
+          onKeyUp={this.handleSearch}
+        />
+        <input
+          type="submit"
+          className="form__btn"
+        />
+      </form>
+    );
+  }
 }
 
 export default Form;

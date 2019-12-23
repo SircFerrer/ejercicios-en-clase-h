@@ -1,16 +1,16 @@
 import React from 'react';
-import Form from './Form';
-// import FormClass from './FormClass';
-
+import Form from './Form'
 
 const Header = (props) => {
-  console.log(props)
+  console.log(props.handleSearch)
   return (
     <header>
+      <h1 className="title--big">Buscador de series</h1>
+      <h2>{props.showTitle}</h2>
       <Form
-        propsdeForm = {props.propsdeheader}
+        handleSearch={props.handleSearch}
+        search={props.search}
       />
-      {/* <FormClass/> */}
     </header>
   );
 }

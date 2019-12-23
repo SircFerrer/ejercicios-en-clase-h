@@ -1,16 +1,21 @@
 import React from 'react';
-import Show from './Show';
+import ShowItem from './ShowItem';
 
 const ShowList = props => {
-  return (
-    <ul>
-      {props.items.map((show,index) => {
-       return <li key={index}>
-          <Show title={show.title} img={show.img}/>
-        </li>
-      })}
-    </ul>
-  );
+    return (
+      <div>
+        <h2 className="title--medium">{props.title}</h2>
+        <ul className="cards">
+          {props.items.map(item => {
+            return <ShowItem
+              key={item.show.id}
+              name={item.show.name}
+              image={item.show.image.medium}
+            />
+          })}
+        </ul>
+      </div>
+    );
 }
 
 export default ShowList;

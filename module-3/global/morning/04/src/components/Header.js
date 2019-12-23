@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './Form'
 
-function Header(props) {
+const Header = (props) => {
   return (
     <header>
       <h1 className="title--big">Buscador de series</h1>
