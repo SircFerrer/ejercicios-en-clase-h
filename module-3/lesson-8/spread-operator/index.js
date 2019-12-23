@@ -1,8 +1,14 @@
 ///SPREAD OPERATOR EN OBJETOS
-//consolea un objeto clonado y pisa su propiedad edad con la nueva
-console.log({...object, edad:36})
+const objeto = {
+  name: 'maria',
+  surname:'hojas',
+  age:34
+}
 
-//consolea el objeto original veo que la edad no ha variado
+//consolea un objeto clonado y pisa su propiedad age con la nueva
+console.log({...object, age:36})
+
+//consolea el objeto original veo que la edad no ha variado en el original
 console.log(object)
 //////////
 
